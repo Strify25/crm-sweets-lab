@@ -56,37 +56,3 @@
 		margin-right: #{$indent-value} !important;
 	}
 }
-
-.inputGroup {
-	position: relative;
-	margin-bottom: 40px;
-
-	.inputName {
-		font-size: inherit;
-		font-weight: normal;
-		position: absolute;
-		pointer-events: none;
-		left: 20px;
-		top: 16px;
-		transition: all 0.2s ease;
-
-		.requared {
-			color: #f00;
-		}
-	}
-	&.active, &.completed {
-		.inputName {
-			top: -25px;
-			left: 0;
-			font-size: 14px;
-		}
-	}
-	div.error {
-		font-size: 13px;
-		color: red;
-	}
-}
-
-.uk-input, .uk-select, .uk-textarea {
-	border: 1px solid #E1E1E1;
-}

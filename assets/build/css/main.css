@@ -13445,29 +13445,5 @@ iframe.uk-cover {
 .mh-100 {
   margin-right: 100px !important; }
 
-.inputGroup {
-  position: relative;
-  margin-bottom: 40px; }
-  .inputGroup .inputName {
-    font-size: inherit;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 20px;
-    top: 16px;
-    transition: all 0.2s ease; }
-    .inputGroup .inputName .requared {
-      color: #f00; }
-  .inputGroup.active .inputName, .inputGroup.completed .inputName {
-    top: -25px;
-    left: 0;
-    font-size: 14px; }
-  .inputGroup div.error {
-    font-size: 13px;
-    color: red; }
-
-.uk-input, .uk-select, .uk-textarea {
-  border: 1px solid #E1E1E1; }
-
 header {
   background: #222; }
