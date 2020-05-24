@@ -27,7 +27,7 @@
 				            	<a href="/users.html">Покупатели</a>
 				                <div class="uk-navbar-dropdown">
 				                    <ul class="uk-nav uk-navbar-dropdown-nav">
-				                        <li class="uk-active"><a href="/add-user.html">Добавить</a></li>
+				                        <li class="uk-active"><a href="/add.html">Добавить</a></li>
 				                    </ul>
 				                </div>
 				            </li>
@@ -41,26 +41,51 @@
 </header>
 
 <div class="uk-container uk-container-xsmall mv-100">
-	<h1>Авторизация</h1>
-	<form>
+	<h1>Добавить уведомление</h1>
+
+	<form class="uk-form-horizontal uk-margin-large">
 
 	    <div class="uk-margin">
-	        <div class="uk-position-relative">
-	            <span class="uk-form-icon" uk-icon="icon: user"></span>
-	            <input class="uk-input uk-width-1-2" type="text">
+	        <label class="uk-form-label" for="form-horizontal-text">Имя*</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input" type="text" placeholder="Some text...">
 	        </div>
 	    </div>
 
 	    <div class="uk-margin">
-	        <div class="uk-position-relative">
-	            <span class="uk-form-icon" uk-icon="icon: lock"></span>
-	            <input class="uk-input uk-width-1-2" type="password">
+	        <label class="uk-form-label" for="form-horizontal-text">Телефон</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input phone" type="text" placeholder="Some text...">
 	        </div>
 	    </div>
-		
-		<button class="uk-button uk-button-primary">Войти</button>
-		
+
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-text">Почта</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input" type="text" placeholder="Some text...">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-select">Статус</label>
+	        <div class="uk-form-controls">
+	            <select name="PROPERTY_STATUS" class="uk-select">
+					<option value="51" selected="">Актуально</option>
+					<option value="52">Не актуально</option>
+				</select>
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <div class="uk-form-label">Комментарий</div>
+	        <div class="uk-form-controls">
+	            <textarea name="" rows="5" class="uk-textarea"></textarea>
+	        </div>
+	    </div>
+
+		<button class="uk-button uk-button-secondary">Сохранить</button>
 	</form>
+
 </div>
 
 <div id="sidebarMenu" data-uk-offcanvas>
