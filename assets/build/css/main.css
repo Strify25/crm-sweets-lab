@@ -13447,3 +13447,28 @@ iframe.uk-cover {
 
 header {
   background: #222; }
+
+.prodQuant {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch; }
+  .prodQuant input {
+    max-width: 80px;
+    -ms-flex: none;
+        flex: none;
+    text-align: center; }
+  .prodQuant span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0 5px;
+    -ms-flex: none;
+        flex: none;
+    cursor: pointer; }
+
+.basketTable th + th, .basketTable td + td {
+  text-align: center; }

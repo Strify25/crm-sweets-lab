@@ -7,27 +7,77 @@
 
 //= template/header.html
 
-<div class="uk-container uk-container-xsmall mv-100">
-	<h1>Авторизация</h1>
-	<form>
+<div class="uk-container mv-100">
+	<h1>Корзина</h1>
+	<table class="uk-table uk-table-hover uk-table-divider uk-table-striped basketTable">
+		<thead>
+			<tr>
+				<th>Товар</th>
+				<th>Цена за шт., руб.</th>
+				<th>Количество</th>
+				<th>Сумма, руб.</th>
+				<th>Удалить</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<a href="">Коробка для торта без окошка, 360х360х360 мм (белая)</a>
+				</td>
+				<td>
+					<div class="price">100</div>
+				</td>
+				<td>
+					<div class="prodQuant">
+						<span class="minus" data-uk-icon="minus"></span>
+						<input type="text" class="uk-input quatityChange" value="1" max="198" name="quant">
+						<span class="plus" data-uk-icon="plus"></span>
+					</div>
+				</td>
+				<td>
+					<div class="summ">100</div>
+				</td>
+				<td>
+					<button class="uk-button uk-button-danger ph-10" data-uk-icon="icon: close"></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="">Коробка для торта без окошка, 360х360х360 мм (белая)</a>
+				</td>
+				<td>
+					<div class="price">100</div>
+				</td>
+				<td>
+					<div class="prodQuant">
+						<span class="minus" data-uk-icon="minus"></span>
+						<input type="text" class="uk-input quatityChange" value="1" max="198" name="quant">
+						<span class="plus" data-uk-icon="plus"></span>
+					</div>
+				</td>
+				<td>
+					<div class="summ">100</div>
+				</td>
+				<td>
+					<button class="uk-button uk-button-danger ph-10" data-uk-icon="icon: close"></button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="mv-50 uk-child-width-1-2" data-uk-grid>
+		<form>
 
-	    <div class="uk-margin">
 	        <div class="uk-position-relative">
-	            <span class="uk-form-icon" uk-icon="icon: user"></span>
-	            <input class="uk-input uk-width-1-2" type="text">
+	            <button class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-right"></button>
+	            <input class="uk-input uk-width-1-1" type="text" placeholder="Введите код купона и нажмите стрелку">
 	        </div>
-	    </div>
+			
+		</form>
 
-	    <div class="uk-margin">
-	        <div class="uk-position-relative">
-	            <span class="uk-form-icon" uk-icon="icon: lock"></span>
-	            <input class="uk-input uk-width-1-2" type="password">
-	        </div>
-	    </div>
-		
-		<button class="uk-button uk-button-primary">Войти</button>
-		
-	</form>
+		<div class="uk-text-right">
+			<a class="uk-button uk-button-secondary">Оформитьзаказ</a>
+		</div>
+	</div>
 </div>
 
 //= template/footer.html

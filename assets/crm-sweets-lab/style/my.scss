@@ -1,3 +1,28 @@
 header {
 	background: $dark;
 }
+
+.prodQuant {
+	display: flex;
+	align-items: stretch;
+
+	input {
+		max-width: 80px;
+		flex: none;
+		text-align: center;
+	}
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 5px;
+		flex: none;
+		cursor: pointer;
+	}
+}
+
+.basketTable {
+	th+th, td+td {
+		text-align: center;
+	}
+}
