@@ -10,8 +10,90 @@
 </head>
 <body>
 
-Привет!
+<header data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+	<div class="uk-container uk-container-expand">
+		<div class="uk-flex-between uk-light uk-flex-middle" data-uk-grid>
+			<div>
+				<button type="button" data-uk-toggle="target: #sidebarMenu" data-uk-icon="icon: menu; ratio: 2"></button>
+			</div>
+			<div>
+				<nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar="mode: hover">
+				    <div class="uk-navbar-left">
+				        <ul class="uk-navbar-nav">
+				            <li class="uk-active"><a href="/catalog.html">Каталог товаров</a></li>
+				            <li><a href="/basket.html">Корзина</a></li>
+				            <li><a href="/order.html">Оформление</a></li>
+				            <li>
+				            	<a href="/users.html">Покупатели</a>
+				                <div class="uk-navbar-dropdown">
+				                    <ul class="uk-nav uk-navbar-dropdown-nav">
+				                        <li class="uk-active"><a href="/add.html">Добавить</a></li>
+				                    </ul>
+				                </div>
+				            </li>
+				            <li><a href="/notify.html">Уведомить о поступлении</a></li>
+				        </ul>
+				    </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
 
+<div class="uk-container uk-container-xsmall mv-100">
+	<h1>Авторизация</h1>
+	<form>
+
+	    <div class="uk-margin">
+	        <div class="uk-position-relative">
+	            <span class="uk-form-icon" uk-icon="icon: user"></span>
+	            <input class="uk-input uk-width-1-2" type="text">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <div class="uk-position-relative">
+	            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+	            <input class="uk-input uk-width-1-2" type="password">
+	        </div>
+	    </div>
+		
+		<button class="uk-button uk-button-primary">Войти</button>
+		
+	</form>
+</div>
+
+<div id="sidebarMenu" data-uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+	        <li class="uk-active"><a href="#">Active</a></li>
+	        <li class="uk-parent">
+	            <a href="#">Parent</a>
+	            <ul class="uk-nav-sub">
+	                <li><a href="#">Sub item</a></li>
+	                <li>
+	                    <a href="#">Sub item</a>
+	                    <ul>
+	                        <li><a href="#">Sub item</a></li>
+	                        <li><a href="#">Sub item</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </li>
+	        <li class="uk-parent">
+	            <a href="#">Parent</a>
+	            <ul class="uk-nav-sub">
+	                <li><a href="#">Sub item</a></li>
+	                <li><a href="#">Sub item</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+
+    </div>
+</div>
 
 <script src="js/main.min.js"></script>
 </body>

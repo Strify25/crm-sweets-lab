@@ -1,5 +1,20 @@
 // Variables Bootstrap 4
 
-$red:     #cc2eaa;
-$green:   #2ecc71;
+$dark:    #222;
+$green:   #00abab;
 
+$indents: (
+  0, 5, 10, 15, 20,
+  25, 30, 35, 40, 45,
+  50, 55, 60, 65, 70,
+  75, 80, 85, 90, 95,
+  100
+);
+
+$controls-button-rounds: 5 !default;
+$sizes-font-steps: 3;
+$sizes: 5 !default;
+
+@function sizes-font-additional($step) {
+	@return (floor(($step) / $sizes-font-steps) * 2);
+}

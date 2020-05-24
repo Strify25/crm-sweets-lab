@@ -1,6 +1,4 @@
-// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
-@import "variables";
-
-// Подключение своих SCSS файлов
 @import "uikit";
+@import "variables";
+@import "typography";
 @import "my";
