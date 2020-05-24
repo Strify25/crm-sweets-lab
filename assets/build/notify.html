@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/main.min.css">
+    
+    <title>Стартовая страница</title>
+</head>
+<body>
+
+<header data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+	<div class="uk-container uk-container-expand">
+		<div class="uk-flex-between uk-light uk-flex-middle" data-uk-grid>
+			<div>
+				<button type="button" data-uk-toggle="target: #sidebarMenu" data-uk-icon="icon: menu; ratio: 2"></button>
+			</div>
+			<div>
+				<nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar="mode: hover">
+				    <div class="uk-navbar-left">
+				        <ul class="uk-navbar-nav">
+				            <li class="uk-active"><a href="/catalog.html">Каталог товаров</a></li>
+				            <li><a href="/basket.html">Корзина</a></li>
+				            <li><a href="/order.html">Оформление</a></li>
+				            <li>
+				            	<a href="/users.html">Покупатели</a>
+				                <div class="uk-navbar-dropdown">
+				                    <ul class="uk-nav uk-navbar-dropdown-nav">
+				                        <li class="uk-active"><a href="/add.html">Добавить</a></li>
+				                    </ul>
+				                </div>
+				            </li>
+				            <li><a href="/notify.html">Уведомить о поступлении</a></li>
+				        </ul>
+				    </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="uk-container uk-container-expand mv-50">
+	<h1>Уведомить о поступлении</h1>
+	
+	<div class="uk-flex-middle" data-uk-grid>
+		<div class="uk-width-expand">
+			<form class="uk-grid-small uk-child-width-1-5" data-uk-grid>
+				<div>
+					<input class="uk-input" type="text" placeholder="Имя">
+				</div>
+				<div>
+					<input class="uk-input" type="text" placeholder="Телефон">
+				</div>
+				<div>
+					<input class="uk-input" type="text" placeholder="Email">
+				</div>
+				<div>
+					<button class="uk-button uk-button-secondary">Найти</button>
+				</div>
+		    </form>
+		</div>
+		<div class="uk-width-1-6">
+			<a href="/add-notify.html" class="uk-button uk-button-secondary">Добавить уведомление<span class="uk-margin-small-left" uk-icon="file-edit"></span></a>
+		</div>
+	</div>
+    <div class="uk-flex uk-flex-middle mt-20">
+		<div class="ph-15">Сортировать по:</div>
+		<div class="ph-15">
+			<a href="" class="uk-button uk-button-secondary">Имени<span class="uk-margin-small-left" uk-icon="arrow-up"></span></a>
+		</div>
+		<div class="ph-15">
+			<a href="" class="uk-button uk-button-secondary">Email<span class="uk-margin-small-left" uk-icon="arrow-up"></span></a>
+		</div>
+		<div class="ph-15">
+			<a href="" class="uk-button uk-button-secondary">Товарам<span class="uk-margin-small-left" uk-icon="arrow-up"></span></a>
+		</div>
+		<div class="ph-15">
+			<a href="" class="uk-button uk-button-secondary">Дате<span class="uk-margin-small-left" uk-icon="arrow-up"></span></a>
+		</div>
+	</div>
+
+	<table class="uk-table uk-table-hover uk-table-divider uk-table-striped">
+	    <thead>
+	    	<tr>
+	    		<th>Дата</th>
+	    		<th>ФИО</th>
+	    		<th>Телефон</th>
+	    		<th>Почта</th>
+	    		<th>Товар</th>
+	    		<th>Статус</th>
+	    		<th>Комментарий</th>
+	    		<th>Сохранить</th>
+	    	</tr>
+	    </thead>
+	    <tbody>
+	    	<tr>
+	    		<td>
+	    			22.05.2020
+	    		</td>
+	    		<td>
+	    			<input class="uk-input" type="text" value="">
+	    		</td>
+	    		<td>
+	    			<input class="uk-input phone" type="text" value="">
+	    		</td>
+	    		<td>
+	    			<input class="uk-input" type="text" value="">
+	    		</td>
+	    		<td>
+	    			<a href="">Форма для льда и шоколада "Ложечки"</a>
+	    		</td>
+	    		<td>
+	    			<select name="PROPERTY_STATUS" class="uk-select">
+						<option value="51" selected="">Актуально</option>
+						<option value="52">Не актуально</option>
+					</select>
+	    		</td>
+	    		<td>
+	    			<textarea name="" rows="5" class="uk-textarea"></textarea>
+	    		</td>
+	    		<td>
+	    			<button class="uk-button uk-button-secondary">Сохранить</button>
+	    		</td>
+	    	</tr>
+	    </tbody>
+	</table>
+	<ul class="uk-pagination uk-flex-center" data-uk-margin>
+	    <li><a href="#"><span data-uk-pagination-previous></span></a></li>
+	    <li><a href="#">1</a></li>
+	    <li><a href="#">5</a></li>
+	    <li><a href="#">6</a></li>
+	    <li class="uk-active"><span>7</span></li>
+	    <li><a href="#">8</a></li>
+	    <li><a href="#"><span data-uk-pagination-next></span></a></li>
+	</ul>
+
+</div>
+
+<div id="sidebarMenu" data-uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
+	        <li class="uk-active"><a href="#">Active</a></li>
+	        <li class="uk-parent">
+	            <a href="#">Parent</a>
+	            <ul class="uk-nav-sub">
+	                <li><a href="#">Sub item</a></li>
+	                <li>
+	                    <a href="#">Sub item</a>
+	                    <ul>
+	                        <li><a href="#">Sub item</a></li>
+	                        <li><a href="#">Sub item</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </li>
+	        <li class="uk-parent">
+	            <a href="#">Parent</a>
+	            <ul class="uk-nav-sub">
+	                <li><a href="#">Sub item</a></li>
+	                <li><a href="#">Sub item</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+
+    </div>
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

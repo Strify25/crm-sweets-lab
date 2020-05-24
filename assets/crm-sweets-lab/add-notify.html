@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+
+//= template/header.html
+
+<div class="uk-container uk-container-xsmall mv-100">
+	<h1>Добавить уведомление</h1>
+
+	<form class="uk-form-horizontal uk-margin-large">
+
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-text">Имя*</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input" type="text" placeholder="Some text...">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-text">Телефон</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input phone" type="text" placeholder="Some text...">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-text">Почта</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input" type="text" placeholder="Some text...">
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-select">Статус</label>
+	        <div class="uk-form-controls">
+	            <select name="PROPERTY_STATUS" class="uk-select">
+					<option value="51" selected="">Актуально</option>
+					<option value="52">Не актуально</option>
+				</select>
+	        </div>
+	    </div>
+
+	    <div class="uk-margin">
+	        <div class="uk-form-label">Комментарий</div>
+	        <div class="uk-form-controls">
+	            <textarea name="" rows="5" class="uk-textarea"></textarea>
+	        </div>
+	    </div>
+
+		<button class="uk-button uk-button-secondary">Сохранить</button>
+	</form>
+
+</div>
+
+//= template/footer.html
+</body>
+</html>
